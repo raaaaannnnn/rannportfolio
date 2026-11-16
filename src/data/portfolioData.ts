@@ -63,7 +63,7 @@ export const PERSONAL_INFO = {
   githubUrl: "https://github.com/raaaaannnnn",
   instagramUrl: "https://www.instagram.com/rannxvl/",
   cvDownloadFileName: "CV_Randy_ComputerScience_BINUS.pdf",
-  avatarUrl: "/src/assets/images/randy.jpg",
+  avatarUrl: "./images/randy.jpg",
 
   availabilityBadge: {
     id: "Terbuka untuk Magang Part-Time & Kolaborasi Proyek",
@@ -133,7 +133,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       id: "Mengembangkan situs web mal yang responsif dan ramah pengguna dengan UI/UX yang lancar di desktop, tablet, dan ponsel. Berfokus pada navigasi intuitif dan penelusuran produk yang bersih.",
       en: "Developed a responsive, user-friendly mall website with a smooth UI/UX across desktop, tablet, and mobile. Focused on intuitive navigation and clean product browsing.",
     },
-    image: "/src/assets/images/hci.jpg",
+    image: "./images/hci.jpg",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "UI/UX", "Figma"],
     keyHighlights: {
       id: [
@@ -174,7 +174,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       id: "Menganalisis pertumbuhan produksi menggunakan metode numerik di Python, menerapkan teknik seperti interpolasi, pencocokan kurva, dan diferensiasi numerik untuk memodelkan tren output. Dibangun dengan Python, proyek ini memproses data produksi untuk memperkirakan tingkat pertumbuhan dan memprediksi output masa depan dengan akurasi yang lebih baik.",
       en: "Analyzed production growth using numerical methods in Python, applying techniques such as interpolation, curve fitting, and numerical differentiation to model output trends. Built with Python, the project processes production data to estimate growth rates and forecast future output with improved accuracy.",
     },
-    image: "/src/assets/images/sci-comp.jpg",
+    image: "./images/sci-comp.jpg",
     tags: ["Python", "Google Colab", "Numerical Methods", "Data Analysis"],
     keyHighlights: {
       id: [
@@ -215,7 +215,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       id: "Sebuah situs web contoh untuk praktik kedokteran gigi yang dirancang untuk membantu pasien dan dokter mengelola janji temu dengan lebih efisien. Pasien dapat memesan jadwal, sementara dokter dapat melihat dan mengatur ketersediaan mereka melalui antarmuka yang sederhana dan mudah digunakan.",
       en: "A dummy dental website designed to help patients and doctors manage appointments more efficiently. Patients can book schedules, while doctors can view and organize their availability through a simple, user-friendly interface.",
     },
-    image: "/src/assets/images/dental.jpg",
+    image: "./images/dental.jpg",
     tags: ["Figma", "HTML", "CSS", "JavaScript"],
     keyHighlights: {
       id: [
@@ -244,7 +244,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     name: "Use Generative AI for Software Development",
     issuer: "IBM SkillsBuild",
     issueDate: "2025",
-    image: "/src/assets/images/certif-1.jpg",
+    image: "./images/certif-1.jpg",
   },
 
   {
@@ -252,7 +252,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     name: "IBM Granite Models for Software Development",
     issuer: "IBM SkillsBuild",
     issueDate: "2025",
-    image: "/src/assets/images/certif-2.jpg",
+    image: "./images/certif-2.jpg",
   },
 
   {
@@ -260,6 +260,6 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
     name: "Code Generation and Optimization Using IBM Granite",
     issuer: "IBM SkillsBuild",
     issueDate: "2025",
-    image: "/src/assets/images/certif-3.jpg",
+    image: "./images/certif-3.jpg",
   },
 ];

@@ -79,11 +79,16 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-400">
           <p>
-            © {new Date().getFullYear()} {PERSONAL_INFO.fullName}. Hak Cipta Dilindungi.
+            © {new Date().getFullYear()} {PERSONAL_INFO.fullName}.{' '}
+            {lang === 'id' ? 'Hak Cipta Dilindungi.' : 'All Rights Reserved.'}
           </p>
 
           <p className="flex items-center gap-1 text-zinc-400 dark:text-zinc-500">
-            <span>Dirancang dengan React 19, TypeScript & Tailwind CSS</span>
+            <span>
+              {lang === 'id'
+                ? 'Dirancang dengan React 19, TypeScript & Tailwind CSS'
+                : 'Built with React 19, TypeScript & Tailwind CSS'}
+            </span>
           </p>
         </div>
 

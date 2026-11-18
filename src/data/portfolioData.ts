@@ -236,6 +236,47 @@ export const PROJECTS_DATA: ProjectItem[] = [
     githubUrl: "https://github.com/raaaaannnnn/DentalLink",
     date: "2026",
   },
+
+  {
+    id: "proyek-keempat",
+    title: {
+      id: "SavingDuit",
+      en: "SavingDuit",
+    },
+    category: "Vibe Code Web #1",
+    categoryLabel: {
+      id: "Website Money Management",
+      en: "Money Management Website",
+    },
+    shortDesc: {
+      id: "Aplikasi web pencatat keuangan pribadi dengan autentikasi Google, analitik grafik, pelacakan budget bulanan, dan ekspor CSV.",
+      en: "A personal finance tracker web app with Google authentication, interactive charts, monthly budget tracking, and CSV export.",
+    },
+    fullDesc: {
+      id: "Aplikasi web Single Page Application (SPA) untuk pencatatan keuangan pribadi (DuitKu) yang dibangun dengan React, TypeScript, Tailwind CSS, dan Firebase. Pengguna dapat masuk menggunakan akun Google, mencatat transaksi pemasukan dan pengeluaran dalam Rupiah, memantau grafik arus kas 6 bulan terakhir dan pengeluaran per kategori, mengatur batas budget bulanan dengan indikator progres, serta mengekspor laporan transaksi ke CSV.",
+      en: "A Single Page Application (SPA) personal finance manager (DuitKu) built with React, TypeScript, Tailwind CSS, and Firebase. Users can sign in with Google, record income and expense transactions in IDR, analyze 6-month cashflow and category spending charts, set monthly budget limits with progress indicators, and export transaction reports to CSV.",
+    },
+    image: "./images/duitsaving.jpg",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Firebase", "Recharts"],
+    keyHighlights: {
+      id: [
+        "Autentikasi Google Sign-In dengan isolasi data per pengguna di Cloud Firestore (users/{uid}/...) yang dilindungi Firestore Security Rules.",
+        "Dashboard analitik interaktif menggunakan Recharts untuk grafik pie pengeluaran per kategori dan grafik batang arus kas 6 bulan.",
+        "Manajemen transaksi lengkap, kategori kustom berwarna, pelacakan budget bulanan (indikator hijau/kuning/merah), serta ekspor CSV siap Excel."
+      ],
+      en: [
+        "Google Sign-In authentication with per-user Cloud Firestore data isolation (users/{uid}/...) enforced by Firestore Security Rules.",
+        "Interactive analytics dashboard powered by Recharts featuring a category expense pie chart and a 6-month cashflow bar chart.",
+        "Full transaction CRUD, custom color-coded categories, monthly budget progress tracking (green/amber/red indicators), and Excel-ready CSV export."
+      ],
+    },
+    architectureDetails: {
+      id: "React SPA + Firebase BaaS (React Router · Cloud Firestore · Firebase Auth · Recharts) · Terdiri dari halaman Login, Dashboard Analitik, Transaksi, Budget Bulanan, dan Kategori dengan mode Gelap/Terang.",
+      en: "React SPA + Firebase BaaS (React Router · Cloud Firestore · Firebase Auth · Recharts) · Structured around Login, Analytics Dashboard, Transactions, Monthly Budget, and Categories views with Dark/Light mode.",
+    },
+    githubUrl: "https://github.com/raaaaannnnn/duitku",
+    date: "2026",
+  },
 ];
 
 export const CERTIFICATIONS_DATA: CertificationItem[] = [

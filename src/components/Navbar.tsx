@@ -59,8 +59,33 @@ export const Navbar: React.FC<NavbarProps> = ({
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="flex items-center gap-2 group whitespace-nowrap shrink-0"
+          className="flex items-center gap-2.5 group whitespace-nowrap shrink-0"
         >
+          <svg
+            viewBox="0 0 64 64"
+            fill="none"
+            className="w-8 h-8 shrink-0 rounded-lg shadow-sm transition-transform duration-200 group-hover:scale-105"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="navLogoBg" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#1E1B4B" />
+                <stop offset="100%" stopColor="#09090B" />
+              </linearGradient>
+              <linearGradient id="navLogoBorder" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#818CF8" stopOpacity="0.7" />
+                <stop offset="100%" stopColor="#4F46E5" stopOpacity="0.35" />
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#navLogoBg)" stroke="url(#navLogoBorder)" strokeWidth="2" />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M15 15H31.5C39 15 43 19.2 43 25.3C43 30.3 39.7 34.1 34.5 35.3L43.2 49H34.5L26.2 35.8H22.8V49H15V15ZM22.8 21.6H31C34.1 21.6 35.8 23.1 35.8 25.3C35.8 27.6 34.1 29.1 31 29.1H22.8V21.6Z"
+              fill="#FFFFFF"
+            />
+            <circle cx="48" cy="45.5" r="3.6" fill="#6366F1" />
+          </svg>
           <span className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white transition-colors">
             {PERSONAL_INFO.name}
             <span className="text-indigo-600 dark:text-indigo-400">.</span>
